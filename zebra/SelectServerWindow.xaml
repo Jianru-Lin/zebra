@@ -1,0 +1,22 @@
+﻿<Window x:Class="zebra.SelectServerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="线路列表 - 暗黑破坏神3专用加速器" Height="550" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel>
+            <StackPanel Margin="15,15,15,0">
+                <TextBlock Text="暗黑破坏神3专用加速器" FontSize="22" HorizontalAlignment="Right"/>
+                <TextBlock Text="0.1 内测版" HorizontalAlignment="Right"/>
+            </StackPanel>
+            <DataGrid x:Name="serverDataGrid" Margin="15" VerticalAlignment="Top" Height="320"/>
+            <Grid Margin="15,0,15,15" Height="30">
+                <StackPanel VerticalAlignment="Top" Orientation="Horizontal">
+                    <Button x:Name="refreshButton" Content="刷新" Width="90" Margin="0,0,15,0" Height="30" ToolTip="刷新代理服务器列表"/>
+                    <Button Content="测速" Width="90" Margin="0,0,15,0" ToolTip="测试到各个代理服务器的速度"></Button>
+                    <Button x:Name="configButton" Content="设置" Width="90" Margin="0,0,15,0" ToolTip="设置运行选项"/>
+                </StackPanel>
+                <Button x:Name="startButton" Content="启动" Height="30" Canvas.Left="674" VerticalAlignment="Top" HorizontalAlignment="Right" Width="90"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

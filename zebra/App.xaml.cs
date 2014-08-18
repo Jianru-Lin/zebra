@@ -13,5 +13,13 @@ namespace zebra
     /// </summary>
     public partial class App : Application
     {
+        private Global g;
+        private ViewManager viewManager;
+
+        private void onStartup(object sender, StartupEventArgs e)
+        {
+            viewManager = new ViewManager();
+        }
     }
+
 }

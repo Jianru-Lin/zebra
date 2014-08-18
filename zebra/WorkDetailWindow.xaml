@@ -1,0 +1,8 @@
+﻿<Window x:Class="zebra.WorkDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="运行中 - 暗黑破坏神3专用加速器" Height="550" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        
+    </Grid>
+</Window>
