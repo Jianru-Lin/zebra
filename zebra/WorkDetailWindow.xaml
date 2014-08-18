@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="运行中 - 暗黑破坏神3专用加速器" Height="550" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Button x:Name="stopButton" HorizontalAlignment="Left" Width="90" Height="30" Content="停止" VerticalAlignment="Top" Margin="15,15,0,0"/>
+        <DataGrid Margin="15,60,15,40"/>
     </Grid>
 </Window>

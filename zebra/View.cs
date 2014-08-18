@@ -337,6 +337,20 @@ namespace zebra
         protected override void beforeNavIn()
         {
             window = new WorkDetailWindow();
+            window.stopButton.Click += stopButton_Click;
+        }
+
+        protected override void beforeNavOut()
+        {
+            window.stopButton.Click -= stopButton_Click;
+        }
+
+        void stopButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (WannaStop != null)
+            {
+                WannaStop(this, EventArgs.Empty);
+            }
         }
     }
 
